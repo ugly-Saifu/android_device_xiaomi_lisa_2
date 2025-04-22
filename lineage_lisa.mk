@@ -7,6 +7,10 @@
 # Inherit from lisa device
 $(call inherit-product, device/xiaomi/lisa/device.mk)
 
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -33,4 +37,6 @@ TARGET_CORE_GMS := true
 TARGET_CORE_GMS_EXTRAS := true
 TARGET_DEFAULT_PIXEL_LAUNCHER := true
 TARGET_INCLUDE_GOOGLE_DIALER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
